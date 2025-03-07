@@ -1,8 +1,5 @@
 version: "3"
 services:
-  backend:
-    environment:
-      - mongodb+srv://admin:admin@pratyush1.az7tq.mongodb.net/sample_mflix?retryWrites=true&w=majority&appName=pratyush1
   server:
     container_name: server
     build:

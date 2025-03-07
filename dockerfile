@@ -11,3 +11,5 @@ COPY . .
 EXPOSE 5001
 
 ENTRYPOINT ["npm", "start"]
+
+

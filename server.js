@@ -3,7 +3,7 @@ const dotenv = require("dotenv").config();
 const connectDb = require("./config/dbConnection");
 const errorHandler = require("./middleware/errorHandler");
 
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 5001;
 
 connectDb();
 

@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata: 
+  name: nodeapp-deployment
+  labels:
+    app: nodeapp-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nodeapp-deployment
+  template:
+    metadata:
+      labels:
+        app: nodeapp-deployment
+    spec: 
+      containers:
+        - name: nodeserver
+          image: pps3006/kube-server:latest
+          ports:
+          - containerPort: 5001
+          
